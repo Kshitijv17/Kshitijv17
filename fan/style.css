@@ -1,0 +1,65 @@
+.container{
+    height: 800px;
+    width: 600px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fan{
+    height: 600px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   
+}
+
+.box{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: burlywood;
+    position: absolute;
+    
+}
+
+.pole{
+    height: 200px;
+    width: 20px;
+    margin-top: 170px;
+    margin-left: 150px;
+    background-color: black;
+    transform: skew(40deg);
+    position: relative;
+    top: 0;
+    right: 282px;
+
+}
+.box1{
+    height: 400px;
+    width: 20px;
+    background: linear-gradient(to top, red ,blue);
+    position: absolute;
+
+}
+.box2{
+    height: 20px;
+    width: 400px;
+    background: linear-gradient(to left, red, blue);
+     position: absolute;
+}
+
+.box.overlay{
+    z-index: 1;
+    margin: 50px;
+    /* background-color: rgba(255, 0, 0, 0.541) ; */
+}
+
+
+.fan:hover{
+    z-index: 1;
+    transition: 2s ease-in-out;
+    transform: skew(30deg) rotate(3000deg) ;
+}
